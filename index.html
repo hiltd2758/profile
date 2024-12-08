@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DH - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="icon"  href="Assests/favicon.svg" type="image/svg+xml">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="loader">
+    <h1>Welcome to My World...</h1>
+</div>
+
+<header class="header">
+    <nav>
+        <div class="logo-container">
+            <img src="Assests/favicon.svg" alt="favicon" class="favicon">
+            <a href="index.html" class="logo">hiltd.dev.prod</a>
+        </div>
+
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#contact" class="scroll-link">Contact</a></li>
+        </ul>
+        <!--            <button class="mode-toggle">🌙</button>-->
+        <!-- <button class="mode-toggle">🌕</button> -->
+    </nav>
+</header>
+<section id="hero" class="hero">
+    <h1>Hello, I am<br><span class="highlight">Developer & Music Producer</span></h1>
+    <p>Combining technology and music to create unique experiences</p>
+    <a href="#contact" class="btn">Explore Now</a>
+</section>
+<section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+        <div class="timeline">
+            <h3>My Journey</h3>
+            <ul>
+                <li><span>2005</span> just born 🤷‍♂️</li>
+                <li><span>2013-2020</span>active in school events & unions (always the party starter)
+                </li>
+                <li><span>2020</span> started messing around with music apps (FL Studio, Garageband) 🎶</li>
+                <li><span>2023 - now</span> learning and leveling up skills 🚀</li>
+            </ul>
+        </div>
+        <div class="media">
+            <img src="Assests/profile.png" alt="My Photo">
+            <!-- Optionally, you can add a short intro video -->
+        </div>
+        <div class="intro-details">
+            <p>I am Tran Dong Hil, a student at the University of Transport in Ho Chi Minh City, majoring in information technology. I'm also exploring music production and web development. My goal is to combine my technical skills with my passion for music.</p>
+            <a href="#contact" class="btn">Let's Collaborate</a>
+        </div>
+    </div>
+</section>
+<section id="skills" class="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+        <div class="skill-category">
+            <h3>Web Technologies</h3>
+            <div class="progress">
+                <label>HTML5, CSS3, JavaScript</label>
+                <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+            <div class="progress">
+                <label>React & Node.js</label>
+                <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+            <div class="progress">
+                <label>Cloud Solutions (AWS)</label>
+                <div class="progress-bar" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Music Production</h3>
+            <div class="progress">
+                <label>Sound Design</label>
+                <div class="progress-bar" style="width: 85%;"></div>
+            </div>
+            <div class="progress">
+                <label>Music Composition</label>
+                <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+            <div class="progress">
+                <label>Audio Mixing</label>
+                <div class="progress-bar" style="width: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Advanced Music Production</h3>
+            <div class="progress">
+                <label>Mastering Tracks</label>
+                <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+            <div class="progress">
+                <label>Beat Making</label>
+                <div class="progress-bar" style="width: 85%;"></div>
+            </div>
+            <div class="progress">
+                <label>Studio Equipment Handling</label>
+                <div class="progress-bar" style="width: 75%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="projects" class="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>AI Music Generator</h3>
+            <p>An AI-powered app that generates music automatically based on predefined patterns.</p>
+        </div>
+        <div class="project-card">
+            <h3>Beat Making Platform</h3>
+            <p>An online platform allowing users to create and share beats.</p>
+        </div>
+        <div class="project-card">
+            <h3>Music Education App</h3>
+            <p>An interactive music learning app with AI feedback.</p>
+        </div>
+    </div>
+</section>
+<div class="contact" id="contact">
+    <div class="form-decoration decoration-1"></div>
+    <div class="form-decoration decoration-2"></div>
+    <h2 class="section-title">Contact</h2>
+    <form class="contact-form" id="contactForm">
+        <div class="form-group">
+            <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter Your Name"
+                    required
+            >
+            <label for="name">Name</label>
+        </div>
+
+        <div class="form-group">
+            <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Your Email Address"
+                    required
+            >
+            <label for="email">Email</label>
+        </div>
+        <div class="form-group">
+            <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Enter Your Message"
+                    required
+            ></textarea>
+            <label for="message">Message</label>
+        </div>
+        <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i>
+            Send Message
+        </button>
+    </form>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>About Me</h3>
+            <p>Hey, I'm Tran Dong Hil, an IT student at the University of Transport, HCMC. Passionate about tech and music production. Let's connect!</p>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:hiltd2758@ut.edu.vn">hiltd2758@ut.edu.vn</a></p>
+            <p>Phone: <a href="tel:+84862082750">+84 862082750</a></p>
+        </div>
+        <div class="footer-social">
+            <h3>Connect</h3>
+            <a href="https://www.facebook.com/hiltd05" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/hil-tr%E1%BA%A7n-68066233a/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/hilyh_woqq/" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Developer & Music Producer. All rights reserved.</p>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
