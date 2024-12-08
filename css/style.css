@@ -994,3 +994,6 @@ body.dark-mode {
     }
 }
 
+textarea{
+    resize: none;
+}
